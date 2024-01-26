@@ -14,15 +14,25 @@ using namespace std;
 
 int main()
 {
+    double enteredHeight;
+    double enteredWidth;
+
     Rectangle theRectangle;
 
     cout << "Initial state of the Rectangle" << endl;
     cout << "       Height = " << theRectangle.getHeight() << endl;
     cout << "       Width  = " << theRectangle.getwWidth() << endl;
     cout << "       Area  =  " << theRectangle.getArea() << endl;
-    theRectangle.setHeight(7.0);
-    theRectangle.setWidth(8.0);
-    cout << "Current state of the circle" << endl;
+    
+    cout << "Enter the height of the rectangle, then press ENTER" << endl;
+    cin >> enteredHeight;
+    cout << "Now enter the width of the rectangle, then press ENTER" << endl;
+    cin >> enteredWidth; 
+
+    theRectangle.updateHeightandWidth(enteredHeight, enteredWidth);
+
+
+    cout << "Current state of the Rectangle" << endl;
     cout << "         Height = " << theRectangle.getHeight() << endl;
     cout << "         Width = " << theRectangle.getwWidth() << endl;
     cout << "         Area  =  " << theRectangle.getArea() << endl;

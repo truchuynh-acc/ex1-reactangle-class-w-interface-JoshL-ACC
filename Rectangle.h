@@ -9,15 +9,21 @@ class Rectangle : public RectangleInterface
 {
     public:
         Rectangle();
-        void setHeight(double newHeight);
+        bool updateHeightandWidth(double inputHeight, double inputWidth);
+
+       // void rectanglePrompt() const;
+
+        void setHeight() const;
+
+        void setWidth() const; 
+
         double getHeight() const;
 
-        void setWidth(double newWidth);
         double getwWidth() const;
 
         double getArea() const;
     private:
         double height;
         double width;
-    };
+};
 #endif
